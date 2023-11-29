@@ -62,11 +62,15 @@ function resetTimer() {
     clearInterval(intervalID);
 
     // reset vars
-    ms = s = m = h = 1;
+    // ms = s = m = h = 1;
+    ms = 1;
+    h = m = s = 0 ;
 
     // reset html
     seconds.innerHTML = minutes.innerHTML = hours.innerHTML = '0';
     milliseconds.innerHTML = '00';
+
+    document.querySelector('title').textContent =  `Stopwatch`;
 }
 
 
